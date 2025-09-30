@@ -212,7 +212,7 @@ aside.sidebar {
     list-style: none;
     margin-top: 16px;
     max-height: 250px;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 
 .story-item {
@@ -246,4 +246,72 @@ aside.sidebar {
 
 .sidebar-footer p:first-child {
     margin-bottom: 1rem;
+}
+
+.suggestions-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    color: var(--font-color-secondary);
+    margin: 20px 0 16px 0;
+}
+
+.suggestions-header a {
+    text-decoration: none;
+    color: var(--font-color-primary);
+    font-size: 12px;
+}
+
+.suggestion-cards {
+    display: flex;
+    gap: 10px;
+}
+
+.suggestion-card {
+    flex: 1;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.suggestion-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: var(--font-color-secondary);
+    cursor: pointer;
+}
+
+.suggestion-card img {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+.suggestion-card .username {
+    font-weight: 600;
+}
+
+.verified {
+    color: var(--button-color-follow);
+    font-size: 0.8rem;
+}
+
+.suggestion-card .subtext {
+    color: var(--font-color-secondary);
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.follow-button {
+    background-color: #3897f0;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
 }
