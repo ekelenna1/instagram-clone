@@ -90,4 +90,160 @@ aside.sidebar {
     border-radius: 50%;
     cursor: pointer;
 } */
- 
+
+.post {
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+}
+
+.post-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.author-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+}
+
+.post-footer {
+    padding: 8px 12px;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.action-icons-left {
+    display: flex;
+    gap: 16px;
+}
+
+.post-actions .bi {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.post-likes {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.post-caption {
+    margin-bottom: 4px;
+}
+
+.post-caption strong {
+    margin-right: 5px;
+}
+
+.comment-line {
+    border-top: 1px solid #efefef;
+    margin: 10px 0;
+}
+
+.add-comment {
+    color: var(--font-color-secondary);
+}
+
+.sidebar {
+    position: sticky;
+    top: 80px;
+    height: calc(100vh - 80px); 
+}
+
+.sidebar-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.main-profile-pic {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-text span {
+    color: var(--font-color-secondary);
+}
+
+.stories-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: var(--font-color-secondary);
+    font-weight: 600;
+}
+
+.stories-header a {
+    text-decoration: none;
+    color: var(--font-color-primary);
+    font-size: 12px;
+}
+
+.story-list {
+    list-style: none;
+    margin-top: 16px;
+    max-height: 250px;
+    overflow-y: scroll;
+}
+
+.story-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.story-item img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background: linear-gradient(to right, red, orange) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.story-item span {
+    color: var(--font-color-secondary);
+    font-size: 12px;
+}
+
+.sidebar-footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #c7c7c7;
+}
+
+.sidebar-footer p:first-child {
+    margin-bottom: 1rem;
+}
