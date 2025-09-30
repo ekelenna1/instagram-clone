@@ -1,22 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="my insta clone" content="This is an insta clone">
-    <title>My Instagram Page</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="description" content="retro Instagram clone">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-<div id="header">
-    <h1>Welcome to My Instagram Clone</h1>
-</div>
 
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="./images/instagram.png" alt="Instagram logo">
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search">
+            </div>
+            <nav class="nav-icons">
+                <i class="bi bi-house-door"></i>
+                <i class="bi bi-send"></i>
+                <i class="bi bi-compass"></i>
+                <i class="bi bi-heart"></i>
+                <i class="bi bi-person"></i>
+            </nav>
+        </div>
+    </header>
 
+    <div class="content-area">
+        <main class="feed">
+            <article class="post">
+                <div class="post-header">
+                    <div class="post-author">
+                        <img src="./images/profile-pic-1.jpg" alt="User profile" class="author-pic">
+                        <span>magnus</span>
+                    </div>
+                    <i class="bi bi-three-dots"></i>
+                </div>
+                <img src="./images/post-image-1.jpg" alt="Post content" class="post-image">
+                <div class="post-footer">
+                    <div class="post-actions">
+                        <div class="action-icons-left">
+                            <i class="bi bi-heart"></i>
+                            <i class="bi bi-chat"></i>
+                            <i class="bi bi-send"></i>
+                        </div>
+                        <i class="bi bi-bookmark"></i>
+                    </div>
+                    <p class="post-likes"><strong>32.3k likes</strong></p>
+                    <p class="post-caption"><strong>climbdattree</strong> huba huba!</p>
+                    <p class="post-caption"><strong>cronicliar</strong> looks easy..</p>
+                    <div class="comment-line"></div>
+                    <p class="add-comment">Add a comment...</p>
+                </div>
+            </article>
+
+            <article class="post">
+                <div class="post-header">
+                    <div class="post-author">
+                        <img src="./images/profile-pic-2.jpg" alt="User profile" class="author-pic">
+                        <span>phil.ivey</span>
+                    </div>
+                    <i class="bi bi-three-dots"></i>
+                </div>
+                <img src="./images/post-image-2.jpg" alt="Post content" class="post-image">
+                <div class="post-footer">
+                    <div class="post-actions">
+                        <div class="action-icons-left">
+                            <i class="bi bi-heart"></i>
+                            <i class="bi bi-chat"></i>
+                            <i class="bi bi-send"></i>
+                        </div>
+                        <i class="bi bi-bookmark"></i>
+                    </div>
+                    <p class="post-likes"><strong>67.41k likes</strong></p>
+                    <p class="post-caption"><strong>helmuth</strong> I'm better lol</p>
+                    <p class="post-caption"><strong>d.negr</strong> nah</p>
+                    <div class="comment-line"></div>
+                    <p class="add-comment">Add a comment...</p>
+                </div>
+            </article>
+        </main>
+
+        <aside class="sidebar">
+        </aside>
+    </div>
 
 </body>
-
-
 
 </html>
