@@ -31,10 +31,11 @@ body {
 main.feed {
     /* width: 100%;
     max-width: 470px; */
-    flex: 1 1 auto; 
-    min-width: 300px; 
-    width: auto; 
-    max-width: none; 
+    
+    width: 100%;
+    max-width: 470px; 
+    min-width: 300px;
+ 
 }
 
 aside.sidebar {
@@ -99,7 +100,7 @@ aside.sidebar {
     flex: 0 0 auto; 
 }
 
-/* ensure nav icons sit on the right side of the header grid */
+
 .nav-icons {
     justify-self: end;
 }
@@ -475,7 +476,6 @@ aside.sidebar {
     gap: 12px;
 }
 
-/* ensure logo sits on the left side of the header grid */
 .logo-container {
     justify-self: start;
 }
