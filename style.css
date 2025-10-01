@@ -53,12 +53,16 @@ aside.sidebar {
 
 .header-content {
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    column-gap: 16px;
-    max-width: 820px;
+    column-gap: 20px;
+    
+    width: 100%;
+    max-width: 975px;
     margin: 0 auto;
-    padding: 0 10px;
+    
+    padding: 0 20px; 
+    position: relative;
 }
 
 #instagram-text-logo {
@@ -93,6 +97,11 @@ aside.sidebar {
     align-items: center;
     gap: 18px;
     flex: 0 0 auto; 
+}
+
+/* ensure nav icons sit on the right side of the header grid */
+.nav-icons {
+    justify-self: end;
 }
 
 .nav-icons .bi {
@@ -464,6 +473,11 @@ aside.sidebar {
     display: flex;
     align-items: center;
     gap: 12px;
+}
+
+/* ensure logo sits on the left side of the header grid */
+.logo-container {
+    justify-self: start;
 }
 
 .logo-container .bi-instagram {
